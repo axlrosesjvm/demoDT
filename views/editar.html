@@ -1,0 +1,42 @@
+<form>
+    <h3 align="center">Editar Venta de producto</h3>
+    <div class="has-feedback">
+        <label> id_producto: </label>        
+        <input type="text" class="form-control" placeholder="Tarea a realizar" ng-model="producto.id_producto" value="{{producto.id_producto}}"> </input>
+        <span class="glyphicon glyphicon-tasks form-control-feedback"></span>
+    </div>
+
+    <div class="has-feedback">
+        <label>tipo: </label>        
+        <input type="text" class="form-control" placeholder="Tarea a realizar" ng-model="producto.tipo" value="{{producto.tipo}}"> </input>
+        <span class="glyphicon glyphicon-tasks form-control-feedback"></span>
+    </div>
+
+    <div class="has-feedback">
+        <label>nombre: </label>
+        <input type="text" class="form-control" placeholder="Tarea a realizar" ng-model="producto.nombre" value="{{producto.nombre}}"> </input>
+        <span class="glyphicon glyphicon-tasks form-control-feedback"></span>
+    </div>
+
+    <div class="has-feedback">
+        <label>Precio de Venta Unidad: </label>              
+        <input type="text" class="form-control" placeholder="Tarea a realizar" ng-model="producto.precio_de_venta_unidad" value="{{producto.precio_de_venta_unidad}}"> </input>
+        <span class="glyphicon glyphicon-tasks form-control-feedback"></span>
+    </div>
+
+    <div class="has-feedback">
+        <label>precio_de_compra_unidad: </label>              
+        <input type="text" class="form-control" placeholder="Tarea a realizar" ng-model="producto.precio_de_compra_unidad" value="{{producto.precio_de_compra_unidad}}"> </input>
+        <span class="glyphicon glyphicon-tasks form-control-feedback"></span>
+    </div>
+
+
+    <div class="text-center editBtn">
+        <button class="btn btn-success btn-sm" ng-click="actualizar()">Actualizar</button>
+        <button class="btn btn-danger btn-sm" ng-click="eliminar()">Eliminar</button>
+    </div>
+</form>
+
+<div>
+    <a ui-sref="alta">Regresar</a>
+</div>

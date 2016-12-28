@@ -1,0 +1,28 @@
+<form>
+    <h3 align="center">Editar Combo</h3>
+    <div class="has-feedback">
+        <label> id_combo: </label>  
+        <input type="text" class="form-control" placeholder="Tarea a realizar" ng-model="combo.id_combo" value="{{combo.id_combo}}"> </input>
+        <span class="glyphicon glyphicon-tasks form-control-feedback"></span>
+    </div>
+
+    <div class="has-feedback">
+        <label>precio_de_venta:</label>       
+        <input type="text" class="form-control" placeholder="Tarea a realizar" ng-model="combo.precio_de_venta" value="{{combo.precio_de_venta}}"> </input>
+        <span class="glyphicon glyphicon-tasks form-control-feedback"></span>
+    </div>
+
+    <div class="has-feedback">
+        <label>nombre:</label>   
+        <input type="text" class="form-control" placeholder="Tarea a realizar" ng-model="combo.nombre" value="{{combo.nombre}}"> </input>
+        <span class="glyphicon glyphicon-tasks form-control-feedback"></span>
+    </div>
+
+    <div class="text-center editBtn">
+        <button class="btn btn-success btn-sm" ng-click="actualizar()">Actualizar</button>
+        <button class="btn btn-danger btn-sm" ng-click="eliminar()">Eliminar</button>
+    </div>
+</form>
+<div>
+    <a ui-sref="alta">Regresar</a>
+</div>

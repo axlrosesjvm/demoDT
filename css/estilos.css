@@ -1,0 +1,122 @@
+header {
+	background:#2c3e50;
+	color:#fff;
+}
+
+.main {
+	background:#f2f2f2;
+}
+
+.color1 {
+	background: #14495e;
+	color:#fff;
+}
+.color2 {
+	background: #32295e;
+	color:#fff;
+}
+aside {
+	background:#c0392b;
+	color:#fff;
+}
+
+footer {
+	background:#16a085;
+	color:#fff;
+}
+
+.contenedor{
+	box-shadow:10px 10px 5px 0px #160000; 
+	/*border-radius: 10px 20px 30px;*/
+	border-radius: 10px;
+	/*border-radius: 15px / 50px;*/
+	/*border-top-right-radius: 20px;
+	border-top-left-radius: 10px; 
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 20px;*/
+	background-color: LightGreen;
+	padding-top: 200px;
+	margin: 40px auto;
+	width: 400px;
+	height: 100px;
+	text-align: center;
+	font-weight: bold;
+}
+
+     h2 {
+
+        font-family: 'Baloo Bhaina', serif;
+        font-size: 48px;
+      }
+     h3 {
+
+        font-family: 'Nunito', serif;
+        font-size: 48px;
+      }
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+.todoList {
+    border: 1px solid LightBlue;
+    border-radius: 5px;
+    padding: 10px;
+    color: #454545;
+}
+
+.glyphicon-circle-arrow-up,
+.glyphicon-circle-arrow-down,
+.glyphicon-pencil,
+.glyphicon-trash,
+.glyphicon-usd,
+.glyphicon-edit,
+.glyphicon-remove{
+    cursor: pointer
+}
+
+.glyphicon-edit{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.prioridad{
+     padding-left: 5px;
+}
+
+.item {
+    text-transform: capitalize;
+    border-bottom: 1px solid SteelBlue;
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    color: #454545;
+}
+
+.item.ng-move,
+.item.ng-enter,
+.item.ng-leave {
+    transition: all linear 1s;
+}
+
+.item.ng-leave.ng-leave-active,
+.item.ng-move,
+.item.ng-enter {
+    opacity: 0;
+}
+
+.item.ng-leave,
+.item.ng-move.ng-move-active,
+.item.ng-enter.ng-enter-active {
+    opacity: 1;
+}

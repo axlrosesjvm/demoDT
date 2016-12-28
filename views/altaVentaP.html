@@ -1,0 +1,50 @@
+<center>
+<div flex-xs flex-gt-xs="50" layout="column">
+      <md-toolbar>
+        <div class="md-toolbar-tools">
+          <center>
+          <h2>Ingresar Venta De {{producto.nombre}} ({{producto.precio_de_compra_unidad}} Bs)</h2>
+          <span></span>
+          </center>
+        </div>
+      </md-toolbar>
+
+      <md-card>
+  <div class="demo-dialog-content">   
+        <form>
+          <md-input-container class="md-icon-float md-block">
+            <!-- Use floating label instead of placeholder -->
+            <label>Fecha</label>
+            <md-icon md-svg-src="img/icons/ic_person_24px.svg" class="name"></md-icon>
+            <input type="text" ng-model="fecha" value="">
+          </md-input-container>   
+
+          <md-input-container class="md-icon-float md-icon-right md-block">
+            <label>Cantidad</label>
+            <md-icon md-svg-src="img/icons/ic_card_giftcard_24px.svg"></md-icon>
+            <input type="text" class="form-control" ng-model="cantidad" ng-keyup="sum(cantidad,producto.precio_de_venta_unidad)"/>
+            <md-icon md-svg-src="img/icons/ic_euro_24px.svg"></md-icon>
+          </md-input-container>
+    
+
+          <md-input-container class="md-icon-float md-icon-right md-block">
+            <label>Monto</label>
+            <md-icon md-svg-src="img/icons/ic_card_giftcard_24px.svg"></md-icon>
+            <input type="text" class="form-control" placeholder="Tarea a realizar" ng-model="addition" > </input>
+            <md-icon md-svg-src="img/icons/ic_euro_24px.svg"></md-icon>
+          </md-input-container>
+
+          <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>      
+            <md-button class="md-raised md-primary" ng-click="ingresarVentaP()"> Ingresar Venta</md-button>      
+            <md-button class="md-raised md-warn"  ui-sref="alta">Cancelar</md-button>      
+          </section>
+        </form>
+</div>
+</center>
+           
+          </md-card>
+
+</div>
+
+</center>
+

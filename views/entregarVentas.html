@@ -1,0 +1,37 @@
+<div class="main row">
+        <article class="color1 col-xs-12 col-sm-6 col-md-6 col-lg-6">       
+            <h3>ENTREGAR VENTAS</h3>
+
+<button class="btn btn-success btn-sm" ng-click="EntregarVenta()">Entregar Venta</button>
+
+             <span class="prioridad" >venta total: {{ventatotal | number:2}}</span>|        
+             <span class="prioridad" >ganancia total: {{gananciatotal | number:2}}</span>|
+             <span class="prioridad" >capital: {{capital | number:2}}</span>| 
+             <span class="prioridad" >ganancia javier: {{gj | number:2}}</span>| 
+             <span class="prioridad" >ganancia mama: {{gm | number:2}}</span>| 
+            <div class="todoList bg-info">        
+                    <div class="item" ng-repeat="preventa in preventas | filter: query">
+                        <span class="prioridad">id_preventa: {{preventa.id_preventa}}</span> |
+        
+                        <br>
+                        <span>
+                          <a href="#"> nombre_de_producto: {{preventa.nombre_de_producto}}  </a>  |
+                          <a href="#"> nombre_de_combo: {{preventa.nombre_de_combo}}  </a>    
+                        </span> |
+                        <br>
+                        <span class="prioridad">nombre_de_vendedor: {{preventa.nombre_de_vendedor}}</span> |
+                        <span class="prioridad">precio_de_venta: {{preventa.precio_de_venta}}</span> |
+                        <span class="prioridad">cantidad: {{preventa.cantidad}}</span> |
+                        <span class="prioridad">ganancia: {{preventa.ganancia}}</span> |
+                        <span class="prioridad">fecha: {{preventa.fecha}}</span> |
+                        <span class="prioridad">suma_total_de_ventas: {{preventa.suma_total_de_ventas}}</span> |
+                        <span class="prioridad">ganancia_total: {{preventa.ganancia_total}}</span> |
+
+                        <span class="glyphicon glyphicon-trash text-danger" ng-click="eliminar(producto)"></span>
+                  </div>
+            </div>
+            <br>
+        </article>    
+</div>
+
+
